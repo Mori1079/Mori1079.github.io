@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Anastasia Pyzhik · Junior Data Analyst · Minsk, Belarus">
+<title>Anastasia Pyzhik — Junior Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,500,0,0&display=swap">
+<style>
+  :root{
+    --bg:#F7F5EF;
+    --surface:#FFFFFF;
+    --ink:#1F1B16;
+    --ink-soft:#5B4E3D;
+    --accent:#43592F;
+    --accent-soft:#5F7A45;
+    --line:rgba(31,27,22,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', system-ui, sans-serif;
+    line-height:1.6;
+    font-size:15px;
+  }
+  .material-symbols-outlined{
+    font-family:'Material Symbols Outlined';
+    font-weight:normal;
+    font-style:normal;
+    font-size:19px;
+    line-height:1;
+    vertical-align:-3px;
+    color:var(--accent);
+    margin-right:6px;
+    font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 20;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:56px 24px 90px;}
+
+  header{margin-bottom:44px;}
+  .avatar{
+    width:104px;
+    height:104px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-top:18px;
+    border:3px solid var(--surface);
+    box-shadow:0 0 0 1px var(--line);
+    display:block;
+  }
+  h1{
+    font-family:'JetBrains Mono', monospace;
+    font-size:30px;
+    font-weight:700;
+    margin:0 0 4px;
+    letter-spacing:-0.01em;
+  }
+  .role{
+    font-family:'JetBrains Mono', monospace;
+    color:var(--accent);
+    font-size:15px;
+    margin:0 0 18px;
+  }
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 22px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+  .contact-row a{color:var(--ink-soft);text-decoration:none;border-bottom:1px dotted var(--ink-soft);}
+  .contact-row a:hover{color:var(--accent);border-bottom-color:var(--accent);}
+  .location{
+    margin-top:10px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+
+  section{margin-top:38px;}
+  h2{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--ink);
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid var(--line);
+    padding-bottom:8px;
+    margin:0 0 18px;
+  }
+
+  .summary-text{margin:0;color:var(--ink);}
+
+  .skill-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:18px 28px;
+  }
+  .skill-group h3{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    color:var(--accent-soft);
+    margin:0 0 6px;
+    font-weight:600;
+  }
+  .skill-group ul{margin:0;padding:0;list-style:none;}
+  .skill-group li{
+    font-size:13.5px;
+    padding:2px 0;
+    color:var(--ink);
+  }
+  .skill-group li b{color:var(--ink);font-weight:600;}
+
+  .edu-entry, .job-entry{margin-bottom:26px;}
+  .edu-entry:last-child, .job-entry:last-child{margin-bottom:0;}
+  .entry-title-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:4px 14px;
+  }
+  .entry-title{font-weight:600;font-size:15px;}
+  .entry-meta{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    white-space:nowrap;
+  }
+  .entry-sub{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    margin:3px 0 10px;
+    font-style:italic;
+  }
+  ul.bullets{margin:0;padding-left:18px;}
+  ul.bullets li{margin:5px 0;font-size:13.8px;}
+  ul.bullets li b{color:var(--accent);font-weight:600;}
+
+  .lang-list{display:flex;gap:28px;flex-wrap:wrap;}
+  .lang-item{font-size:14px;}
+  .lang-item b{color:var(--accent);}
+
+  a.proj-link{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px dotted var(--accent);
+  }
+
+  footer{
+    margin-top:56px;
+    padding-top:18px;
+    border-top:1px solid var(--line);
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.5px;
+    color:var(--ink-soft);
+  }
+
+  @media (max-width:600px){
+    .skill-grid{grid-template-columns:1fr;}
+    .wrap{padding:40px 18px 70px;}
+    h1{font-size:25px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Anastasia Pyzhik</h1>
+    <p class="role">// Junior Data Analyst</p>
+    <div class="contact-row">
+      <span><span class="material-symbols-outlined">mail</span><a href="mailto:your.email@example.com">your.email@example.com</a></span>
+      <span><span class="material-symbols-outlined">link</span><a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">/in/YOUR-LINKEDIN</a></span>
+      <span><span class="material-symbols-outlined">code</span><a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">/YOUR-GITHUB</a></span>
+    </div>
+    <div class="location"><span class="material-symbols-outlined">location_on</span>Minsk, Belarus (GMT+3)</div>
+    <img class="avatar" src="assets/img/profile.jpg" alt="Anastasia Pyzhik">
+  </header>
+
+  <section id="summary">
+    <h2><span class="material-symbols-outlined">terminal</span>Summary</h2>
+    <p class="summary-text">
+      4th-year Computer Science student (BSU, Faculty of Applied Mathematics and Informatics) with hands-on
+      <b>SQL</b>, <b>Python</b> and <b>Excel</b> skills and a business analyst internship. Built an independent
+      analytics case study on Belarus's 2025 potato harvest — reconciling official statistics with in-season
+      reports, visualizing in Python, and dashboarding in Power BI. Looking for a Junior Data Analyst role to
+      apply data-driven thinking to real business problems.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2><span class="material-symbols-outlined">dns</span>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-group">
+        <h3>SQL &amp; Databases</h3>
+        <ul>
+          <li><b>SQL Server</b></li>
+          <li><b>SELECT / WHERE / GROUP BY / JOIN</b></li>
+          <li>CASE WHEN, CTE, subqueries</li>
+          <li>Window functions, date functions</li>
+          <li>Indexes, nested functions</li>
+          <li>Transactions &amp; ROLLBACK, access roles</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Python</h3>
+        <ul>
+          <li><b>Pandas</b></li>
+          <li><b>NumPy</b></li>
+          <li>Matplotlib</li>
+          <li>Scikit-learn (basics)</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Excel</h3>
+        <ul>
+          <li><b>VLOOKUP / XLOOKUP</b></li>
+          <li>INDEX / MATCH, PivotTables</li>
+          <li>Conditional formatting, data validation</li>
+          <li>Charts, Power Query basics</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>BI &amp; Reporting</h3>
+        <ul>
+          <li><b>Power BI</b> — data import &amp; modeling</li>
+          <li>Core visuals, slicers, cards</li>
+          <li>Basic DAX (SUM, CALCULATE)</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Statistics</h3>
+        <ul>
+          <li>Descriptive statistics</li>
+          <li>Distributions, correlation</li>
+          <li>Hypothesis testing &amp; confidence intervals (basics)</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Also</h3>
+        <ul>
+          <li>Jupyter Notebook</li>
+          <li>PowerPoint</li>
+          <li>Open-data research</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2><span class="material-symbols-outlined">school</span>Education</h2>
+    <div class="edu-entry">
+      <div class="entry-title-row">
+        <span class="entry-title">Computer Science (Informatics)</span>
+        <span class="entry-meta"><span class="material-symbols-outlined" style="font-size:14px;vertical-align:-2px;">calendar_month</span>2023 – 2027</span>
+      </div>
+      <p class="entry-sub">Belarusian State University (BSU), Faculty of Applied Mathematics and Informatics — Bachelor's, 4th year, in progress.</p>
+    </div>
+  </section>
+
+  <section id="languages">
+    <h2><span class="material-symbols-outlined">translate</span>Languages</h2>
+    <div class="lang-list">
+      <span class="lang-item"><b>Russian</b> — Native</span>
+      <span class="lang-item"><b>English</b> — B1</span>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2><span class="material-symbols-outlined">rocket_launch</span>Work Experience</h2>
+    <div class="job-entry">
+      <div class="entry-title-row">
+        <span class="entry-title">Business Analyst Intern at Innowise</span>
+        <span class="entry-meta"><span class="material-symbols-outlined" style="font-size:14px;vertical-align:-2px;">calendar_month</span>Sep 2025 – Dec 2025 <span class="material-symbols-outlined" style="font-size:14px;vertical-align:-2px;">location_on</span>Minsk</span>
+      </div>
+      <p class="entry-sub">International IT outsourcing company — software delivery and business analysis for global clients.</p>
+      <ul class="bullets">
+        <li>Gathered and structured business requirements from stakeholders for internal reporting tools, documenting them as <b>user stories</b> and <b>BPMN</b> diagrams.</li>
+        <li>Analyzed internal process data in <b>Excel</b> and <b>SQL</b>, identifying bottlenecks and preparing summary reports for team leads.</li>
+        <li>Wrote <b>SQL</b> queries (JOIN, GROUP BY, CTE) to support weekly team KPI reporting.</li>
+        <li>Built pivot tables and lightweight dashboards in Excel to track project metrics.</li>
+        <li>Took part in requirement-elicitation meetings, translating business needs into functional specs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2><span class="material-symbols-outlined">insights</span>Projects</h2>
+    <div class="job-entry">
+      <div class="entry-title-row">
+        <span class="entry-title">Belarus Potato Harvest 2025 — Analytical Case Study</span>
+        <span class="entry-meta">2026</span>
+      </div>
+      <ul class="bullets">
+        <li>Reconciled official Belstat statistics with in-season Ministry of Agriculture operational reports for the 2025 harvest.</li>
+        <li>Identified and explained the structural gap between organized-sector monitoring and final national output.</li>
+        <li>Built the analysis in <b>Python</b> (pandas, matplotlib, plotly) and an interactive <b>Power BI</b> dashboard with regional and cross-crop breakdowns.</li>
+      </ul>
+      <a class="proj-link" href="https://github.com/YOUR-GITHUB/potato-harvest-2025" target="_blank" rel="noopener">→ github.com/YOUR-GITHUB/potato-harvest-2025</a>
+    </div>
+  </section>
+
+  <footer>
+    Built with HTML/CSS · hosted on GitHub Pages
+  </footer>
+
+</div>
+</body>
+</html>
